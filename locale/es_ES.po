@@ -1,0 +1,11 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:stock.shipment.out,delivery_date:"
+msgid "Delivery Date"
+msgstr "Fecha entrega"
+
+msgctxt "help:stock.shipment.out,delivery_date:"
+msgid "Delivery date calculated from origin"
+msgstr "Fecha entrega calculado desdel origen"
