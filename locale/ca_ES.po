@@ -2,9 +2,13 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:sale.sale,delivery_date:"
+msgid "Delivery Date"
+msgstr "Data lliurament"
+
 msgctxt "field:stock.shipment.out,delivery_date:"
 msgid "Delivery Date"
-msgstr "Data de lliurament"
+msgstr "Data lliurament"
 
 msgctxt "help:stock.shipment.out,delivery_date:"
 msgid "Delivery date calculated from origin"
