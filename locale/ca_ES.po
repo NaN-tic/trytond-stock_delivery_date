@@ -13,3 +13,7 @@ msgstr "Data lliurament"
 msgctxt "help:stock.shipment.out,delivery_date:"
 msgid "Delivery date calculated from origin"
 msgstr "Data de lliurament calculat desdel orígen"
+
+msgctxt "view:stock.shipment.out:"
+msgid "Time"
+msgstr "Hora"
