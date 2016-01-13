@@ -3,6 +3,7 @@
 # the full copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
+from trytond.pyson import Eval
 
 __all__ = ['ShipmentOut']
 __metaclass__ = PoolMeta
@@ -10,10 +11,8 @@ __metaclass__ = PoolMeta
 
 class ShipmentOut:
     __name__ = 'stock.shipment.out'
-    delivery_date = fields.Function(fields.Date('Delivery Date',
-        help='Delivery date calculated from origin'),
-        'get_delivery_date')
-
-    def get_delivery_date(self, name=None):
-        if hasattr(self.origin, 'delivery_date'):
-            return self.origin.delivery_date
+    delivery_date = fields.DateTime('Delivery Date',
+        states={
+            'readonly': Eval('state') != 'draft',
+            },
+        depends=['state'])
