@@ -3,7 +3,7 @@
 this repository contains the full copyright notices and license terms. -->
 <data>
     <xpath
-        expr="/tree/field[@name=&quot;effective_date&quot;]" position="after">
+        expr="/tree/field[@name='effective_date']" position="after">
             <field name="delivery_date" widget="date"/>
     </xpath>
 </data>

@@ -8,8 +8,7 @@ from trytond.pyson import Eval
 __all__ = ['Sale']
 
 
-class Sale:
-    __metaclass__ = PoolMeta
+class Sale(metaclass=PoolMeta):
     __name__ = 'sale.sale'
     delivery_date = fields.DateTime('Delivery Date',
         states={
